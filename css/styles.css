@@ -6,6 +6,13 @@
     --color-body:#918ca4;
 }
 
+*, *::after, ::before {
+    box-sizing: border-box;
+}
+
+/* Typography */
+
+
 html{
     /*62.5% of 16px = 10px*/
     font-size: 62.5%;
@@ -39,83 +46,6 @@ p {
     margin-top: 0;
 }
 
-.badge {
-    border-radius: 20px;
-    font-size: 2rem;
-    font-weight: 600;
-    padding: 0.5rem 2 rem;
-    white-space: nowrap;
-}
-
-.badge--primary {
-    background: var(--color-primary);
-    color: #fff;
-}
-
-.badge--secondary {
-    background: var(--color-secondary);
-    color: #fff;
-}
-
-.badge--small {
-    font-size: 1.6rem;
-}
-/* Lists */
-.list {
-    list-style: none;
-    padding-left: 0;
-    color: var(--color-headings);
-}
-
-.list--inline .list__item{
-    display: inline-block;
-    margin-right: 2rem;
-}
-
-.list--tick {
-    list-style-image: url(../images/tick.svg);
-    padding-left: 3rem;
-}
-
-.list--tick .list__item {
-    padding-left: 0.5rem;
-    margin-bottom: 1rem;
-}
-
-.icon{
-    width: 40px;
-    height: 40px;
-}
-
-.icon--primary {
-    fill:var(--color-primary)
-}
-
-.icon-container {
-    background: #f3f9fa;
-    width: 64px;
-    height: 64px;
-    border-radius: 100%;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-}
-
-@media screen and (min-width: 1024px) {
-    .list--tick .list__item {
-        padding-left: 0;
-    }
-}
-
-@media screen and (min-width: 1024px){
-    .badge{
-        font-size: 1.5rem;
-    }
-    .badge--small{
-        font-size: 1.2rem;
-    }
-}
-
 @media screen and (min-width: 1024px) {
     body{
         font-size: 1.8rem;               
@@ -130,6 +60,8 @@ p {
         font-size: 2.4rem;
     }
 }
+
+/* Links */
 a {
     text-decoration: none;
 }
@@ -156,11 +88,147 @@ a {
     }
 }
 
+/* Badges */
 
+.badge {
+    border-radius: 20px;
+    font-size: 2rem;
+    font-weight: 600;
+    padding: 0.5rem 2rem;
+    white-space: nowrap;
+}
 
+.badge--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
 
+.badge--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
 
+.badge--small {
+    font-size: 1.6rem;
+}
 
+@media screen and (min-width: 1024px){
+    .badge{
+        font-size: 1.5rem;
+    }
+    .badge--small{
+        font-size: 1.2rem;
+    }
+}
 
+/* Lists */
+.list {
+    list-style: none;
+    padding-left: 0;
+    color: var(--color-headings);
+}
 
+.list--inline .list__item{
+    display: inline-block;
+    margin-right: 2rem;
+}
 
+.list--tick {
+    list-style-image: url(../images/tick.svg);
+    padding-left: 3rem;
+}
+
+.list--tick .list__item {
+    padding-left: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .list--tick .list__item {
+        padding-left: 0;
+    }
+}
+
+/* Icons */
+
+.icon{
+    width: 40px;
+    height: 40px;
+}
+
+.icon--primary {
+    fill:var(--color-primary)
+}
+
+.icon-container {
+    background: #f3f9fa;
+    width: 64px;
+    height: 64px;
+    border-radius: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+.btn {
+    border-radius: 40px;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin: 1rem 0;
+    padding: 2rem 3rem;
+    text-align: center;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+.btn--primary {
+    background: var(--color-primary);
+    color: #fff;
+}
+
+.btn--primary:hover{
+    background: #3a8ffd;
+}
+
+.btn--secondary {
+    background: var(--color-secondary);
+    color: #fff;
+}
+
+.btn--secondary:hover {
+    background-color: #00c8eb;
+}
+
+.btn--accent {
+    background: var(--color-accent);
+    color: #fff;
+}
+
+.btn--accent:hover {
+    background: #ec3000;
+}
+
+.btn--outline {
+    background: #fff;
+    color: var(--color-headings);
+    border: 2px solid var(--color-headings);
+}
+
+.btn--outline:hover {
+    background: var(--color-headings);
+    color: #fff;
+}
+
+.btn--block {
+    width: 100%;
+    display: inline-block;
+}
+
+@media screen and (min-width: 1024px){
+    .btn {
+        font-size: 1.5rem;
+    }
+}
