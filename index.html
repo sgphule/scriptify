@@ -11,13 +11,26 @@
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-    <div class="callout callout--primary">
-        <div class="grid grid--1x2">
-            <div class="callout__content">
-                <h2 class="callout__heading">Ready to Get Started?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores rem qui laboriosam autem, enim perferendis consequatur? Sint eius suscipit vitae.</p>
-            </div>
-            <a href="#" class="btn btn--secondary btn--stretched">Get Started</a>
+    <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading">Item</h2>
+            <svg class="icon icon--primary collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+        </header>
+        <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptate.
+        </div>
+    </div>
+    <div class="collapsible collapsible--expanded">
+        <header class="collapsible__header">
+            <h2 class="collapsible__heading">Item</h2>
+            <svg class="icon icon--primary collapsible__chevron">
+                <use xlink:href="images/sprite.svg#chevron"></use>
+            </svg>
+        </header>
+        <div class="collapsible__content">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, voluptate.
         </div>
     </div>
     <p>
@@ -27,5 +40,6 @@
                 alt="Valid CSS!">
         </a>
     </p>
+    <script src="js/main.js"> </script>
 </body>
 </html>
