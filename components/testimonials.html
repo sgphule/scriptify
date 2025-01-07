@@ -1,7 +1,12 @@
 <div class="card testimonial">
     <div class="grid grid--1x2">
         <div class="testimonial__image">
-            <img src="images/testimonials.jpg" alt="A happy, smiling customer">
+            <picture class="block-showcase__image">
+                <source type="image/webp" srcset="images/testimonials@1x.webp 1x, images/testimonials@2x.webp 2x">
+                <source type="image/png" srcset="images/testimonials@1x.jpg 1x, images/testimonials@2x.jpg 2x">
+                <img src="images/testimonials@1x.jpg" alt="A happy, smiling customer">
+            </picture>
+            
             <span class="icon-container icon-container--accent">
                 <svg class="icon icon--white icon--small">
                     <use xlink:href="images/sprite.svg#quotes"></use>
